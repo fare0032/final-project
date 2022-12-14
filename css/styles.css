@@ -1,0 +1,459 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* GENERIC/GENERAL/DEFAULT STYLES */
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px; /* 1em = 14px = 1rem */
+    line-height: 1.5;
+    color: #000000;
+}
+
+h1 {
+    font-size: 71px; 
+    line-height: 106px;
+    margin-bottom: 17px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 48px; 
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    padding: 1em; 
+}
+
+/* NAVIGATION SECTION */
+
+nav {
+    background-color: #222222;
+}
+
+nav a:link,
+nav a:visited {
+    text-align: center;
+    display: block;
+    color: #c78b07;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-decoration: none;
+}
+
+nav li.current a:link,
+nav li.current a:visited {
+    background-color: #c78b07;
+    color: #000000;
+}
+
+.logo {
+    background-color: #c78b07;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+header form {
+    display: flex;
+}
+
+header form input {
+    flex-grow: 1;
+    height: 35px;
+}
+
+/* WELCOME SECTION */
+
+.header-welcome {
+    background-image: url(../images/main-banner.jpg);
+    background-size: cover;
+    padding-top: 68px;
+    padding-bottom: 68px;
+}    
+
+.header-welcome .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding-top: 60px;
+}
+
+.header-welcome button {
+    background-color: #c78b07;
+    border: none;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+/* ABOUT SECTION */
+
+.section-about {
+    background-color: #ffe6ac;
+}
+
+/* SERVICES SECTION */
+
+.transformation, .marketingplans, .videoproduction, 
+.webdev, .printing {
+   background-color: #ffe6ac;
+   margin-bottom: 10px;
+}
+
+.services2, .marketing2, .video2, .webdev2, .print2  {
+    width: 100%;
+}
+
+.paragraphtransf, .market, .productvid, .devweb, 
+.printer {
+    padding-left: 15px;
+    padding-top: 20px;
+}
+
+.paragraph {
+    padding-top: 15px;
+}
+
+.buttondigital, .buttonmarketing, .buttonvideo , .buttonweb, .buttonprint {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 40px;
+}
+
+.section-services button {
+    background-color: #222222;
+    color:white;
+    border: none;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 20px;
+}
+
+/* VISION SECTION*/
+
+.section-vision {
+background-image: url(../images/vision.jpg);
+background-size: cover;
+padding-top: 50px;
+padding-bottom: 15px;
+} 
+
+.visions {
+    color: white;
+    padding-left: 20px;
+}
+
+/* need to change color of "our vision" paragraph and heading */
+
+.section-vision button {
+    background-color: #0d2038;
+    color: white;
+    border-color: #c78b07;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-size: 20px;
+}
+
+/* TEAM SECTION */
+
+.johndoe, .bobrite {
+    background-color:#ffe6ac;
+}
+
+h4 {
+    font-weight: bold;
+    border-bottom: 3px solid orange;
+}
+
+/* CONTACT SECTION */
+
+.section-contact button {
+    background-color: black;
+    color:#c78b07;
+    border: none;
+    font-size: 17px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 7px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  textarea {
+    height: 150px;
+  }
+
+  table, th, td {
+    border: 1px solid;
+    width: 55%;
+    height: 30px;
+  }
+
+td {
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+th {
+    padding-top: 15px;
+    background-color:bisque;
+}
+
+.footer {
+    background-color:#222222;
+    color:#c78b07;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 50px;
+    padding-bottom: 4px;
+}
+
+
+
+/* =========================== 
+        DESKTOP STYLES
+=========================== */
+
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        width: 1168px;
+        padding: 0 16px;
+        margin: 0 auto;
+    }
+
+
+/* DESKTOP STYLES HERE */
+
+
+    /* NAVIGATION SECTION */
+
+    nav a:link {
+        float: left;
+        width: 140px;
+        position: relative;
+        margin-top:20px;
+        margin-bottom: 40px;
+    }
+
+    nav li.current a:link,
+    nav li.current a:visited {
+        background-color:#c78b07;
+        color:#000000;
+    }
+
+    nav {
+        background-color: #222222;
+        padding-top: 20px;
+        padding-bottom: 70px;
+    }
+
+    .logo {
+        float: left;
+        padding: 0px;
+        margin-right: 20px;
+    }
+
+    .searchnav {
+        width: 45%;
+        display: flex;
+        float: right;
+        margin-top:35px;
+    }
+
+    /* WELCOME SECTION */
+
+    .header-welcome .container {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding-top: 40px;
+        padding-bottom: 15px;
+        width: 60%;
+    }
+
+    .header-welcome {
+        background-image: url(../images/main-banner.jpg);
+        background-position: center;
+    } 
+
+    .header-welcome button {
+        background-color: #c78b07;
+        border: none;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        padding-right: 30px;
+        padding-left: 30px;
+        font-size: 20px;
+    }
+
+    /* ABOUT SECTION */
+
+   .aboutimage {
+    width: 50%;
+    float: left;
+    padding-right: 30px;
+   }
+
+   .section-about {
+    background-color: #ffe6ac;
+    display: grid;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    }
+
+    /* SERVICES SECTION */
+
+    .transformation {
+        float: left;
+        width: 49%;
+        margin: 5px;
+    }
+
+    .marketingplans {
+        float: left;
+        width: 36%;
+        height:645px;
+    }
+
+.marketing2{
+    height:388px;
+}
+
+    .video2, .webdev2, .print2 {
+        width: 100%;
+        margin:5px;
+    }
+
+    .buttondigital, .buttonmarketing, .buttonvideo , .buttonweb, .buttonprint {
+        background-color: #222222;
+        color:white;
+        border: none;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: 25px;
+        width: 70%;
+        text-align: center;
+        margin: auto;
+    }
+
+.flex-container{
+    width: 69%;
+    display: flex;
+    margin:auto;
+}
+
+/* VISION SECTION */
+
+.section-vision {
+    background-image: url(../images/vision.jpg);
+    background-position: center;
+    margin-top: 20px;
+    } 
+
+/* TEAM SECTION */
+
+.johndoe{
+    float: left;
+    width: 100%;
+}
+
+.john{
+    float: right;
+    width: 47%;
+}
+
+.bobrite{
+    float: right;
+    width: 100%;
+}
+
+.bob{
+    float: left;
+    width: 48%;
+}
+
+/* CONTACT SECTION */
+
+input[type=text], select, textarea {
+    width: 50%;
+}
+
+}
